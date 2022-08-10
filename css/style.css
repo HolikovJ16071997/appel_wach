@@ -1,8 +1,9 @@
 @import url('ht tps://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
 /* coston props */
  :root{
-    --primary:#C9514C;
+    --primary:#EA625C;
     --text_color:#333;
+    --primary_dark:#C9514C;
 
  }
  /* globol */
@@ -50,7 +51,26 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-
+/* button  */
+.button {
+    padding: 12px 38px;
+    display:inline-block;
+    text-decoration: none;
+    background: var(--primary);
+    color: #fff;
+    font-style: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    transition: 0.3s ease;
+}
+.button:hover{
+    background:var(--primary_dark);
+}
+.button:active{
+    opacity: 0.6;
+}
 /* main_content */
 .main_content{
     flex-grow: 1;
@@ -128,6 +148,32 @@ img{
     outline: none;
 }
 
+/* hero */
+.hero {
+    border-bottom: 2px solid #DDDDDD;
+    padding-top: 140px;
+    padding-bottom: 183px;
+    background: url(../img/intro-bg.png) no-repeat left calc(50% + 545px) bottom;
+}
+/* lade_cta */
+.lead_cta {
+    width: 100%;
+    max-width: 490px;
+}
+.lead_cta_heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #000;
+}
+.lead_cta_text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #777;
+    border-left: 3px solid #777;
+    padding-left: 37px;
+}
 
 
 
@@ -155,10 +201,19 @@ img{
 
 
 
+/* retina bg */
 
-
-
-
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .hero{
+    background-image: url(../img/intro-bg@2x.png);
+  }
+}
 
 input[type='search']::-webkit-search-decoration, 
 input[type='search']::-webkit-search-cancel-button, 
