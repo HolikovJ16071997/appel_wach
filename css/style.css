@@ -53,6 +53,7 @@ img{
 }
 /* button  */
 .button {
+    min-width: 260px;
     padding: 12px 38px;
     display:inline-block;
     text-decoration: none;
@@ -64,6 +65,7 @@ img{
     font-weight: bold;
     border: 0;
     transition: 0.3s ease;
+    text-align: center;
 }
 .button:hover{
     background:var(--primary_dark);
@@ -243,9 +245,43 @@ img{
     width: 60px;
 }
 
+/* promo */
 
+.promo {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.promo_conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-
+.promo_img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+ /* runners */
+ .runners {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    background-image: url(../img/runners.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.lead_cta_runners{
+    margin-left: auto;
+   }
+ .lead_cta_white .lead_cta_heading {
+    color: #fff;
+ }
+ .lead_cta_white .lead_cta_text {
+    color: #fff;
+ }
+ 
 
 
 
